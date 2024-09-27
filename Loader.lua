@@ -17,7 +17,7 @@ else
 end
 
 local function SteamModeOn(SteamMode)
-    return key == "true"  -- Change this to your actual validation logic
+    return SteamMode == "true"  -- Change this to your actual validation logic
 end
 
 -- If the key is valid, execute the following code
