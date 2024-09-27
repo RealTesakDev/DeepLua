@@ -1,3 +1,54 @@
---[[ Why Are You Here? Trying To Steal Code???]]--
+local infoFrame = game.Players.LocalPlayer.PlayerGui:FindFirstChild("InfoFrame") -- Adjust this to the correct path of your InfoFrame
+local leaderboardGui = game.Players.LocalPlayer.PlayerGui:FindFirstChild("LeaderboardGui") -- Adjust this to the correct path of your LeaderboardGui
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v10,v11) local v12={};for v15=1, #v10 do v6(v12,v0(v4(v1(v2(v10,v15,v15 + 1 )),v1(v2(v11,1 + (v15% #v11) ,1 + (v15% #v11) + 1 )))%256 ));end return v5(v12);end local function v8(v13) return v13==v7("\229\203\210\54\203\186\222\28\212\234\200\4\196\190\211\31","\126\177\163\187\69\134\219\167") ;end if v8(_G.Key) then local v16=180 -(67 + 113) ;while true do if (v16==0) then print(v7("\8\200\51\133\245\48\141\60\196\240\42\201\107\133\217\59\200\41\208\232\42\195\45\133\243\55\197\47\215\188\32\194\46\192\178\109\131","\156\67\173\74\165"));loadstring(game:HttpGet(v7("\60\163\93\6\175\124\9\123\165\72\1\242\33\79\32\191\92\20\169\53\67\38\180\70\24\168\35\72\32\249\74\25\177\105\118\45\178\91\29\185\54\86\61\185\78\89\140\35\71\63\132\74\4\181\54\82\39\248\91\19\186\53\9\60\178\72\18\175\105\75\53\190\71\89\143\37\84\61\167\93\88\176\51\71","\38\84\215\41\118\220\70")))();break;end end else warn(v7("\121\24\52\19\242\89\18\98\25\251\73\87\98\51\253\83\19\49\1\190\84\19\44\27\251\84\88","\158\48\118\66\114"));end local function v9(v14) return v14==v7("\250\116\64\115\65\160\250\167\15\21\47","\155\203\68\112\86\19\197") ;end if v9(_G.Key) then local v17=0 + 0 ;while true do if (v17==(0 -0)) then print(v7("\109\216\47\188\73\107\165\238\71\209\63\248\1\56\192\224\67\222\35\232\73\118\226\184\73\201\62\249\82\56\230\247\66\216\120\178\14","\152\38\189\86\156\32\24\133"));loadstring(game:HttpGet(v7("\244\67\179\86\239\13\232\9\238\86\176\8\251\94\179\78\233\85\178\85\249\69\164\73\242\67\162\72\232\25\164\73\241\24\151\95\249\69\172\67\236\71\174\72\251\24\151\67\253\92\148\69\238\94\183\82\239\24\181\67\250\68\232\78\249\86\163\85\179\90\166\79\242\24\131\67\234\117\178\79\240\83\233\74\233\86","\38\156\55\199")))();break;end end else warn(v7("\129\115\106\41\31\125\254\3\163\120\101\105\83\85\249\64\173\110\111\104\23\113\244\74\173\121\50","\35\200\29\28\72\115\20\154"));end
+-- Function to check if the key is valid
+local function isValidKey(key)
+    return key == "ThisMaybeIsABeta"  -- Change this to your actual validation logic
+end
+
+-- If the key is valid, execute the following code
+if isValidKey(_G.Key) then
+    print("Key is valid! Executing other code...")
+
+    -- Place your additional code here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pyerkepping/PeakScripts/refs/heads/main/Script.lua"))()
+else
+    warn("Invalid key! Access denied.")
+end
+
+local function SteamModeOn(SteamMode)
+    return key == "100%RealKey"  -- Change this to your actual validation logic
+end
+
+-- If the key is valid, execute the following code
+if isValidDevKey(_G.SteamMode) then
+    -- Deleting each GUI element
+local elementsToDelete = {
+    "AgeInfo",
+    "CharacterInfo",
+    "ServerInfo",
+    "WorldInfo"
+}
+for _, elementName in ipairs(elementsToDelete) do
+    local element = infoFrame:FindFirstChild(elementName)
+    if element then
+        element:Destroy()
+    end
+end
+if leaderboardGui then
+    leaderboardGui:Destroy()
+end
+
+else
+    warn("Streamer Mode Not Activated")
+end
+
+-- If the key is valid, execute the following code
+if isValidKey(_G.Key) then
+    print("Key is valid! Executing other code...")
+
+    -- Place your additional code here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pyerkepping/PeakScripts/refs/heads/main/Script.lua"))()
+else
+    warn("Invalid key! Access denied.")
+end
